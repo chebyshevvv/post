@@ -2,10 +2,7 @@ package com.chebyshev.post.controller;
 
 import com.chebyshev.post.application.PostService;
 import com.chebyshev.post.dto.PostSaveDto;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @author zwk
@@ -22,7 +19,7 @@ public class PostController {
     }
 
     @PostMapping
-    public void save(@RequestBody PostSaveDto dto){
+    public void save(PostSaveDto dto){
         this.service.save(dto);
     }
 }

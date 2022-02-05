@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>post</title>
+</head>
+<body>
+<form action="index.html" th:action="@{/v1/post}" method="post">
+    <label for="title">标题
+        <input id="title" name="title" type="text"/>
+    </label>
+    <label for="content">内容
+        <input id="content" name="content" type="text"/>
+    </label>
+    <input  type="submit" value="保存"/>
+</form>
+</body>
+</html>

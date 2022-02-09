@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @description TODO
  **/
 @Controller
-@RequestMapping("post/admin")
 public class PostAdminController {
 
     @GetMapping("home")
